@@ -22,13 +22,9 @@ function cerrarModalPatrulla() {
 
 
 function redirigirWhatsApp(numero, event) {
-    event.preventDefault(); // Prevenir el comportamiento predeterminado del botón (enviar el formulario)
-
-    // Obtener el formulario correspondiente al botón
+    event.preventDefault();
     const form = event.target.closest('form');
     const formData = new FormData(form);
-
-    // Enviar el formulario usando AJAX
     fetch(form.action, {
         method: 'POST',
         body: formData,
@@ -38,7 +34,6 @@ function redirigirWhatsApp(numero, event) {
     })
     .then(response => {
         if (response.ok) {
-            // Después de que el formulario se haya enviado correctamente, redirigir a WhatsApp
             window.location.href = `https://wa.me/+57${numero}`;
         } else {
             console.error('Error al enviar el formulario');

@@ -1,4 +1,3 @@
-/* General */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-    background-color: #f4f4f9;  /* Fondo suave */
+    background-color: #f4f4f9; 
     color: #333;
     display: flex;
     flex-direction: column;
@@ -19,24 +18,22 @@ body {
 }
 
 h1 {
-    color: #000000; /* Título con color azul */
+    color: #000000; 
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
-/* Contenedor de las cards */
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 30px;  /* Espaciado entre las cards */
-    flex-wrap: wrap;  /* Hace que las cards se acomoden en diferentes filas si es necesario */
+    gap: 30px; 
+    flex-wrap: wrap; 
 }
 
-/* Estilo para cada card */
 .card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para las cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     width: 250px;
     padding: 20px;
     text-align: center;
@@ -44,11 +41,10 @@ h1 {
 }
 
 .card:hover {
-    transform: translateY(-10px);  /* Efecto al pasar el mouse */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);  /* Aumenta la sombra al hacer hover */
+    transform: translateY(-10px);  
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);  
 }
 
-/* Header de la card (Nombre del botón) */
 .card-header h2 {
     font-size: 1.6rem;
     color: #333;
@@ -56,16 +52,14 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Cuerpo de la card (Cantidad de clics) */
 .card-body p {
     font-size: 1.2rem;
     color: #555;
 }
 
-/* Responsividad para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     .card-container {
-        flex-direction: column; /* Apilan las cards en pantallas más pequeñas */
+        flex-direction: column; 
         align-items: center;
     }
 }
